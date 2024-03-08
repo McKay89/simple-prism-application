@@ -24,5 +24,18 @@ namespace PrismApp.Views
         {
             InitializeComponent();
         }
+
+        private void Browse_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Info_Btn_Click(object sender, RoutedEventArgs e)
+        {
+            Window parentWindow = Window.GetWindow(this);
+            ModalDialog dialogWindow = new();
+            dialogWindow.Owner = parentWindow;
+            dialogWindow.ShowDialog();
+        }
     }
 }

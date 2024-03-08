@@ -8,10 +8,10 @@
              d:DesignHeight="60" d:DesignWidth="800" Background="#212529">
     <Grid>
         <Button Content="Kép kiválasztása" Style="{StaticResource ButtonStyle}"
-                HorizontalAlignment="Left" VerticalAlignment="Center"
-                Width="120" Height="30" Margin="15 0 0 0" Padding="2"/>
+                HorizontalAlignment="Left" VerticalAlignment="Center" Name="browse_btn"
+                Width="120" Height="30" Margin="15 0 0 0" Padding="2" Click="Browse_Btn_Click"/>
         <Button Content="Névjegy" Style="{StaticResource ButtonStyle}"
-                HorizontalAlignment="Left" VerticalAlignment="Center"
-                Width="80" Height="30" Margin="150 0 0 0" Padding="2"/>
+                HorizontalAlignment="Left" VerticalAlignment="Center" Name="info_btn"
+                Width="80" Height="30" Margin="150 0 0 0" Padding="2" Click="Info_Btn_Click"/>
     </Grid>
 </UserControl>
