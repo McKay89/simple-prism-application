@@ -10,8 +10,37 @@
         Title="WPF teszt feladat" Height="450" Width="800"
         AllowsTransparency="True" WindowStartupLocation="CenterScreen"
         WindowStyle="None" Background="#BECFE1">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 0, 0, 0"
-          Height="60" Width="800">
-        <ContentControl prism:RegionManager.RegionName="NavRegion"/>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <!-- Navbar -->
+        <ContentControl prism:RegionManager.RegionName="nav_region"/>
+
+        <!-- Body -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="7*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left region -->
+            <Grid Grid.Column="0">
+                <ContentControl prism:RegionManager.RegionName="left_side"/>
+            </Grid>
+
+            <!-- Right region -->
+            <Grid Grid.Column="1">
+                <ContentControl prism:RegionManager.RegionName="right_side"/>
+            </Grid>
+        </Grid>
+
+        <!-- Footerbar -->
+        <ContentControl prism:RegionManager.RegionName="footer_region"/>   
+        
     </Grid>
 </metro:MetroWindow>
