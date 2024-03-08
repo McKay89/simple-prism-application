@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Projects\Homeworks\simple-prism-application\PrismApp\App.xaml
-11407045341
+21896748320
 
-616379216
-1941659195616
-MainWindow.xaml;
+81092589247
+2011222270214
+Views\MainWindow.xaml;Views\NavView.xaml;
 
 True
 

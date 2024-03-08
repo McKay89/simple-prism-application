@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PrismApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58c39fc8fedb9b78c1ae8317ecf94065e50bbe86")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6a784af10b943e37c79b25aaff66a4ef52db3c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("PrismApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PrismApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
