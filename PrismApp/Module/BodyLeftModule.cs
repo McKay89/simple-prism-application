@@ -5,17 +5,17 @@ using PrismApp.Views;
 
 namespace PrismApp.Module
 {
-    class NavModule : IModule
+    class BodyLeftModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var region = containerProvider.Resolve<IRegionManager>();
-            region.RegisterViewWithRegion("nav_region", typeof(NavView));
+            region.RegisterViewWithRegion("left_side", typeof(BodyLeftView));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+
         }
     }
 }

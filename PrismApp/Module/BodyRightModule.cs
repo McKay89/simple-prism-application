@@ -2,20 +2,25 @@
 using Prism.Modularity;
 using Prism.Regions;
 using PrismApp.Views;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PrismApp.Module
 {
-    class NavModule : IModule
+    class BodyRightModule : IModule
     {
         public void OnInitialized(IContainerProvider containerProvider)
         {
             var region = containerProvider.Resolve<IRegionManager>();
-            region.RegisterViewWithRegion("nav_region", typeof(NavView));
+            region.RegisterViewWithRegion("right_side", typeof(BodyRightView));
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            
+
         }
     }
 }
