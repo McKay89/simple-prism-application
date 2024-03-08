@@ -5,8 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrismApp.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="60" d:DesignWidth="800" Background="Azure">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBlock Text="Hello World !"/>
+             d:DesignHeight="60" d:DesignWidth="800" Background="#212529">
+    <Grid>
+        <Button Content="Kép kiválasztása" Style="{StaticResource ButtonStyle}"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                Width="120" Height="30" Margin="15 0 0 0" Padding="2"/>
+        <Button Content="Névjegy" Style="{StaticResource ButtonStyle}"
+                HorizontalAlignment="Left" VerticalAlignment="Center"
+                Width="80" Height="30" Margin="150 0 0 0" Padding="2"/>
     </Grid>
 </UserControl>
