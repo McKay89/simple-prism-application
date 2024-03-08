@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Title="WPF teszt feladat" Height="450" Width="800"
         AllowsTransparency="True" WindowStartupLocation="CenterScreen"
-        WindowStyle="None" Background="#BECFE1">
+        WindowStyle="None" Background="#C9DFF6">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -19,7 +19,7 @@
         </Grid.RowDefinitions>
 
         <!-- Navbar -->
-        <ContentControl prism:RegionManager.RegionName="nav_region"/>
+        <ContentControl Grid.Row="0" prism:RegionManager.RegionName="nav_region"/>
 
         <!-- Body -->
         <Grid Grid.Row="1">
@@ -40,7 +40,7 @@
         </Grid>
 
         <!-- Footerbar -->
-        <ContentControl prism:RegionManager.RegionName="footer_region"/>   
+        <ContentControl Grid.Row="2" prism:RegionManager.RegionName="footer_region"/>   
         
     </Grid>
 </metro:MetroWindow>
