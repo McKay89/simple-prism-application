@@ -1,28 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PrismApp.Views
 {
-    /// <summary>
-    /// Interaction logic for BodyLeftView.xaml
-    /// </summary>
     public partial class BodyLeftView : UserControl
     {
+        private readonly DateTime actualDate = DateTime.Now;
+        private static Image _smiley = new();
+        private static Visibility VisibilityOfPicture = Visibility.Visible;
+
         public BodyLeftView()
         {
             InitializeComponent();
+
+            Actual_Date_Text.Text = actualDate.ToString();
+            _smiley = Smiley_Image;
+        }
+
+        public static void SetSmileyVisible()
+        {
+            _smiley.Visibility = VisibilityOfPicture;
         }
     }
 }
