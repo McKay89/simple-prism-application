@@ -22,7 +22,7 @@ My first **'Prism WPF'** application, which runs on the Windows operating system
 - After image selection a smiley will appear on the left region
 - The selected image full patch visible on footer bar
 
-### Dependecies I used
+### Dependencies I used
  - MahApps.Metro 2.4.10
  - Prism.Core 8.1.97
  - Prism.Wpf 8.1.97
