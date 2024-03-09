@@ -5,8 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:PrismApp.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="340" d:DesignWidth="800" Background="#3B434B">
+             d:DesignHeight="340" d:DesignWidth="300" Background="#3B434B">
     <Grid>
-            
+        <TextBlock Text="2024.03.08 22:32:13" Foreground="Aqua" FontSize="15"
+                   HorizontalAlignment="Center" VerticalAlignment="Top"
+                   Margin="0 40 0 0" FontWeight="Bold" Name="Actual_Date_Text"/>
+        <Image Source="/Images/smiley.png" Visibility="Hidden"
+               HorizontalAlignment="Center" VerticalAlignment="Bottom"
+               Width="100" Height="100" Margin="0 0 0 70" Name="Smiley_Image"/>
     </Grid>
 </UserControl>
