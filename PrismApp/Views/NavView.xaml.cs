@@ -1,23 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.Win32;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace PrismApp.Views
 {
-    /// <summary>
-    /// Interaction logic for NavView.xaml
-    /// </summary>
     public partial class NavView : UserControl
     {
         public NavView()
@@ -27,14 +13,28 @@ namespace PrismApp.Views
 
         private void Browse_Btn_Click(object sender, RoutedEventArgs e)
         {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Képfájlok (*.jpg; *.jpeg; *.bmp; *.png)|*.jpg; *.jpeg; *.bmp; *.png|Minden fájl|*.*";
 
+            bool? result = openFileDialog.ShowDialog();
+
+            if (result == true)
+            {
+                string selectedFilePath = openFileDialog.FileName;
+
+                BodyRightView.SetImage(selectedFilePath);
+                FooterView.SetImagePathText(selectedFilePath);
+                BodyLeftView.SetSmileyVisible();
+            }
         }
 
         private void Info_Btn_Click(object sender, RoutedEventArgs e)
         {
             Window parentWindow = Window.GetWindow(this);
-            ModalDialog dialogWindow = new();
-            dialogWindow.Owner = parentWindow;
+            ModalDialog dialogWindow = new()
+            {
+                Owner = parentWindow
+            };
             dialogWindow.ShowDialog();
         }
     }
